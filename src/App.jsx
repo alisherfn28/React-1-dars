@@ -1,4 +1,10 @@
 import "./App.css";
+import left_img from "./assets/top_left.png";
+import bottom_img from "./assets/bottom_right.svg";
+import img11 from "./assets/Group_11.svg";
+import img12 from "./assets/Group_12.svg";
+import img13 from "./assets/Group_13.svg";
+import main_bottom from "./assets/right_main_bottom.png";
 
 function App() {
   return (
@@ -25,6 +31,7 @@ function App() {
           </div>
         </nav>
         <div className="container header_container">
+          <img id="img_left" src={left_img} alt="" />
           <div className="header_body">
             <div className="header_title">
               <h1>
@@ -42,64 +49,65 @@ function App() {
               </div>
             </div>
           </div>
+          <img id="img_bottom" src={bottom_img} alt="" />
         </div>
       </header>
       <div className="main">
         <div className="container main_coontainer">
-          <div className="main_body">
-            <div className="body_title">
-              <h1>
-                Build & manage <br /> distributed teams <br /> like no one else.
-              </h1>
+          <div className="body_title">
+            <h2>Build & manage distributed teams like no one else.</h2>
+          </div>
+          <div className="body_experiensed">
+            <div className="experinensed_block">
+              <div className="experinsed_img">
+                <img src={img11} alt="" />
+              </div>
+              <div className="experinsed_title">
+                <div className="top_title">
+                  <h3>Experienced Individuals</h3>
+                </div>
+                <div className="bottom_p">
+                  <p>
+                    Our network is made up of highly experienced professionals
+                    who are passionate about what they do.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="body_experiensed">
-              <div className="experinensed_block">
-                <div className="experinsed_img"></div>
-                <div className="experinsed_title">
-                  <div className="top_title">
-                    <h3>Experienced Individuals</h3>
-                  </div>
-                  <div className="bottom_p">
-                    <p>
-                      Our network is made up of highly experienced professionals
-                      <br />
-                      who are passionate about what they do.
-                    </p>
-                  </div>
+            <div className="experinensed_block">
+              <div className="experinsed_img">
+                <img src={img12} alt="" />
+              </div>
+              <div className="experinsed_title">
+                <div className="top_title">
+                  <h3>Easy to Implement</h3>
+                </div>
+                <div className="bottom_p">
+                  <p>
+                    Our processes have been refined over years of implementation
+                    meaning our teams always deliver.
+                  </p>
                 </div>
               </div>
-              <div className="experinensed_block">
-                <div className="experinsed_img"></div>
-                <div className="experinsed_title">
-                  <div className="top_title">
-                    <h3>Experienced Individuals</h3>
-                  </div>
-                  <div className="bottom_p">
-                    <p>
-                      Our network is made up of highly experienced professionals
-                      <br />
-                      who are passionate about what they do.
-                    </p>
-                  </div>
-                </div>
+            </div>
+            <div className="experinensed_block">
+              <div className="experinsed_img">
+                <img src={img13} alt="" />
               </div>
-              <div className="experinensed_block">
-                <div className="experinsed_img"></div>
-                <div className="experinsed_title">
-                  <div className="top_title">
-                    <h3>Experienced Individuals</h3>
-                  </div>
-                  <div className="bottom_p">
-                    <p>
-                      Our network is made up of highly experienced professionals
-                      <br />
-                      who are passionate about what they do.
-                    </p>
-                  </div>
+              <div className="experinsed_title">
+                <div className="top_title">
+                  <h3>Enhanced Productivity</h3>
+                </div>
+                <div className="bottom_p">
+                  <p>
+                    Our customized platform with in-built analytics helps you
+                    manage your distributed teams.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
+          <img id="main_bottom" src={main_bottom} alt="" />
         </div>
       </div>
     </div>
